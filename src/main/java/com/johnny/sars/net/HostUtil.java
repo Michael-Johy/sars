@@ -2,7 +2,7 @@
  * To change this template, choose Tools | Templates
  * and open the template in the editor.
  */
-package com.johnny.sars.util;
+package com.johnny.sars.net;
 
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
