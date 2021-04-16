@@ -1,20 +1,18 @@
 package com.johnny.sars;
 
-import static org.junit.Assert.assertTrue;
-
-import org.junit.Test;
-
 /**
  * Unit test for simple App.
  */
-public class AppTest 
-{
-    /**
-     * Rigorous Test :-)
-     */
-    @Test
-    public void shouldAnswerWithTrue()
-    {
-        assertTrue( true );
+public class AppTest {
+
+    public static void main(String[] args) {
+
+        int a = 2, b = 3, c = 4;
+        a = b = c;
+        System.out.println(a);
+        System.out.println(b);
+        System.out.println(c);
+
     }
+
 }
