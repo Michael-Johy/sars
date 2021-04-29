@@ -1,4 +1,4 @@
-package com.johnny.sars.lang.reflect;
+package com.johnny.core.lang.reflect;
 
 import org.apache.commons.lang3.reflect.FieldUtils;
 

@@ -3,7 +3,8 @@ package com.johnny.sars.trace.holder;
 import com.google.common.collect.Lists;
 import com.johnny.sars.lang.exception.Exceptions;
 import com.johnny.sars.trace.TraceLog;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 import java.util.concurrent.locks.ReentrantLock;
@@ -11,8 +12,10 @@ import java.util.concurrent.locks.ReentrantLock;
 /**
  * * Description: memory traceLog holder
  */
-@Slf4j
 public class TraceLogHolder {
+
+    private static final Logger log = LoggerFactory.getLogger(TraceLogHolder.class);
+
 
     private static List<TraceLog> traceLogs = Lists.newArrayList();
     private static final ReentrantLock lock = new ReentrantLock();

@@ -2,7 +2,8 @@ package com.johnny.middleware.cache.redis;
 
 import com.google.common.collect.Lists;
 import com.johnny.sars.lang.exception.Exceptions;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.JedisPool;
 import redis.clients.jedis.JedisPoolConfig;
@@ -30,8 +31,9 @@ import redis.clients.jedis.JedisPoolConfig;
  * <p>
  * }
  */
-@Slf4j
 public class RedisUtils {
+
+    private static final Logger log = LoggerFactory.getLogger(ØRedisUtils.class);
 
     private static volatile JedisPool jedisPool = null;
 

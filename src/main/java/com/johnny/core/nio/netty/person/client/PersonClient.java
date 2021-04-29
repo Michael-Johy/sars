@@ -16,7 +16,8 @@ import io.netty.channel.ChannelFuture;
 import io.netty.channel.nio.NioEventLoopGroup;
 import io.netty.channel.socket.nio.NioChannelOption;
 import io.netty.channel.socket.nio.NioSocketChannel;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.net.InetSocketAddress;
 import java.util.concurrent.ExecutionException;
@@ -25,8 +26,10 @@ import java.util.concurrent.ExecutionException;
 /**
  * 响应分发客户端
  */
-@Slf4j
 public class PersonClient {
+
+    private static final Logger log = LoggerFactory.getLogger(PersonClient.class);
+
 
     private final RequestPendingCenter center;
     private final ChannelFuture future;

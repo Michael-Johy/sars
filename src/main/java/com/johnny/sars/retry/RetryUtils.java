@@ -1,8 +1,9 @@
 package com.johnny.sars.retry;
 
-import com.johnny.sars.lang.concurrent.executor.Threads;
 import com.johnny.sars.lang.exception.Exceptions;
-import lombok.extern.slf4j.Slf4j;
+import com.johnny.sars.lang.executor.Threads;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 import org.springframework.util.Assert;
 
 import java.util.concurrent.TimeUnit;
@@ -12,8 +13,8 @@ import java.util.concurrent.TimeUnit;
  * * Date: 2019/8/22 17:59
  * * Description:RetryUtils
  */
-@Slf4j
 public class RetryUtils {
+    private static final Logger log = LoggerFactory.getLogger(RetryUtils.class);
 
     public interface Handler<T> {
         T handle() throws Exception;

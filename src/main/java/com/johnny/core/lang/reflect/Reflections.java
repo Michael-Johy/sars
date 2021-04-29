@@ -1,7 +1,7 @@
 /**
  * Copyright (c) 2005-2012 springside.org.cn
  */
-package com.johnny.sars.lang.reflect;
+package com.johnny.core.lang.reflect;
 
 import org.apache.commons.lang3.StringUtils;
 import org.apache.commons.lang3.Validate;

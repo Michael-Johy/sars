@@ -2,11 +2,9 @@ package com.johnny.core.nio.netty.common;
 
 import com.johnny.sars.json.JsonUtils;
 import io.netty.buffer.ByteBuf;
-import lombok.extern.slf4j.Slf4j;
 
 import java.nio.charset.StandardCharsets;
 
-@Slf4j
 public abstract class Message {
     private MessageHeader header;
     private MessageBody body;

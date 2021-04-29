@@ -1,4 +1,4 @@
-package com.johnny.sars.lang.concurrent.executor;
+package com.johnny.sars.lang.executor;
 
 import org.springframework.scheduling.concurrent.CustomizableThreadFactory;
 

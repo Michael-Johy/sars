@@ -6,12 +6,15 @@ import io.netty.buffer.ByteBuf;
 import io.netty.buffer.Unpooled;
 import io.netty.channel.ChannelHandlerContext;
 import io.netty.handler.codec.MessageToMessageEncoder;
-import lombok.extern.slf4j.Slf4j;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
 
 import java.util.List;
 
-@Slf4j
 public class MessageProtocolEncoder extends MessageToMessageEncoder<Message> {
+    private static final Logger log = LoggerFactory.getLogger(MessageProtocolEncoder.class);
+
+
     @Override
     protected void encode(ChannelHandlerContext ctx, Message msg, List<Object> out) throws Exception {
         log.info("encode response msg = " + JsonUtils.toJSONString(msg));
