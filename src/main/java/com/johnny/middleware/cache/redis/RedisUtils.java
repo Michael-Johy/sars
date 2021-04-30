@@ -1,7 +1,7 @@
 package com.johnny.middleware.cache.redis;
 
 import com.google.common.collect.Lists;
-import com.johnny.sars.lang.exception.Exceptions;
+import com.johnny.utils.lang.exception.Exceptions;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 import redis.clients.jedis.Jedis;
