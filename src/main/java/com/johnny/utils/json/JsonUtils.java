@@ -29,7 +29,6 @@ public class JsonUtils {
         //pretty-json
         mapper.configure(SerializationFeature.INDENT_OUTPUT, true);
         mapper.configure(DeserializationFeature.FAIL_ON_UNKNOWN_PROPERTIES, false);
-
         mapper.registerModule(new GuavaModule());
     }
 
@@ -67,7 +66,7 @@ public class JsonUtils {
 
     public static <T> T parseObject(String str, TypeReference typeReference) {
         try {
-            return mapper.readValue(str, typeReference);
+            return (T) mapper.readValue(str, typeReference);
         } catch (Exception e) {
             throw Exceptions.uncheckException(e);
         }

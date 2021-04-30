@@ -1,4 +1,4 @@
-package com.johnny.utils.trace;
+package com.johnny.utils.trace.model;
 
 /**
  * * Description: TraceLog represents a segment log

@@ -24,13 +24,6 @@ public abstract class IdUtils {
         return random.nextLong();
     }
 
-    /**
-     * 基于Base62编码的随机生成Long.
-     */
-    public static String randomBase62() {
-        return Encodes.encodeBase62(random.nextLong());
-    }
-
     public static String randomHex() {
         return Long.toHexString(random.nextLong());
     }

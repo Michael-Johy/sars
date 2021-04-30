@@ -2,7 +2,7 @@ package com.johnny.utils.trace.holder;
 
 import com.google.common.collect.Lists;
 import com.johnny.utils.lang.exception.Exceptions;
-import com.johnny.utils.trace.TraceLog;
+import com.johnny.utils.trace.model.TraceLog;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 

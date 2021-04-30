@@ -1,6 +1,7 @@
 package com.johnny.utils.trace;
 
 import com.johnny.utils.trace.holder.TraceLogHolder;
+import com.johnny.utils.trace.model.TraceLog;
 import org.apache.commons.lang3.StringUtils;
 
 import java.time.LocalDateTime;

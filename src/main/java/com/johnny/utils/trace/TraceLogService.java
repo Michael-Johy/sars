@@ -3,6 +3,7 @@ package com.johnny.utils.trace;
 import com.google.common.collect.Maps;
 import com.johnny.utils.json.JsonUtils;
 import com.johnny.utils.trace.holder.TraceLogHolder;
+import com.johnny.utils.trace.model.TraceLog;
 import org.apache.kafka.clients.producer.KafkaProducer;
 import org.apache.kafka.clients.producer.Producer;
 import org.apache.kafka.clients.producer.ProducerRecord;
