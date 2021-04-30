@@ -8,7 +8,7 @@ import org.slf4j.LoggerFactory;
 
 
 public class PersonClientHandler extends SimpleChannelInboundHandler<Message> {
-    private static final Logger log = LoggerFactory.getLogger(getClass());
+    private static final Logger log = LoggerFactory.getLogger(PersonClientHandler.class);
 
     @Override
     public void channelActive(ChannelHandlerContext ctx) {

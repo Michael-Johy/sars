@@ -270,7 +270,7 @@ public final class UUIDs {
                 // If we've generated more than 10k uuid in that millisecond,
                 // we restart the whole process until we get to the next millis.
                 // Otherwise, we try use our candidate ... unless we've been
-                // beaten by another thread in which case we try again.
+                // beaten by another thread in which cases we try again.
                 if (millisOf(candidate) == lastMillis && lastTimestamp.compareAndSet(last, candidate)) {
                     return candidate;
                 }

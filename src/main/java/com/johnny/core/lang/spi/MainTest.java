@@ -1,7 +1,7 @@
 package com.johnny.core.lang.spi;
 
 
-import com.johnny.core.lang.spi.api.IOperation;
+import com.johnny.core.lang.spi.cases.IOperation;
 
 import java.util.Iterator;
 import java.util.ServiceLoader;

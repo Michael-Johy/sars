@@ -1,13 +1,10 @@
 package com.johnny.sars.http;
 
-import lombok.Getter;
-
 /**
  * * Created By: yangtao3
  * * Date: 2019/3/5 16:55
  * * Description: Response Code
  */
-@Getter
 public enum ResponseStatus {
 
     OK(200, "OK"),
@@ -23,4 +20,19 @@ public enum ResponseStatus {
     private int code;
     private String message;
 
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
 }

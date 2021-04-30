@@ -1,16 +1,12 @@
 package com.johnny.sars.http;
 
 import com.johnny.sars.lang.string.Strings;
-import lombok.Getter;
-import lombok.Setter;
 
 /**
  * * Created By: yangtao3
  * * Date: 2019/3/5 16:41
  * * Description: Http uniform Response
  */
-@Getter
-@Setter
 public class Response<T> {
     private Response() {
     }
@@ -47,5 +43,28 @@ public class Response<T> {
         return response;
     }
 
+    public int getCode() {
+        return code;
+    }
+
+    public void setCode(int code) {
+        this.code = code;
+    }
+
+    public T getData() {
+        return data;
+    }
+
+    public void setData(T data) {
+        this.data = data;
+    }
+
+    public String getMessage() {
+        return message;
+    }
+
+    public void setMessage(String message) {
+        this.message = message;
+    }
 }
 

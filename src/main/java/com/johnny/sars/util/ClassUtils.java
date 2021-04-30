@@ -204,7 +204,7 @@ public class ClassUtils {
      * Resolve the given class name as primitive class, if appropriate,
      * according to the JVM's naming rules for primitive classes.
      * <p>Also supports the JVM's internal class names for primitive arrays.
-     * Does <i>not</i> support the "[]" suffix notation for primitive arrays;
+     * Does <i>not</i> cases the "[]" suffix notation for primitive arrays;
      * this is only supported by {@link #forName(String, ClassLoader)}.
      *
      * @param name the name of the potentially primitive class

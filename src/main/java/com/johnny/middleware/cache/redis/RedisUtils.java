@@ -33,7 +33,7 @@ import redis.clients.jedis.JedisPoolConfig;
  */
 public class RedisUtils {
 
-    private static final Logger log = LoggerFactory.getLogger(ØRedisUtils.class);
+    private static final Logger log = LoggerFactory.getLogger(RedisUtils.class);
 
     private static volatile JedisPool jedisPool = null;
 
