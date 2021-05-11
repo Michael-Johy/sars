@@ -1,30 +1,32 @@
 # Java https://docs.oracle.com/javase/8/docs/
-
 * java.lang.ClassLoader(App & Ext => BootStrap)
 * java.lang.Instrument(java agent)
+* JVMTI
+  https://docs.oracle.com/javase/8/docs/platform/jvmti/jvmti.html
 * com.sun.tools.JavaCompile(Javac)
 * java.lang.reflect.Proxy(dynamic proxy)
 * java.util.ServiceLoader(spi)
 * java.nio
 * java.util.concurrent
 * java.util.Collection
+* java.lang.management
+* JMX
 
 # Library & Tools
 
 * netty
+* bytecode(javassist)
+  * asm 较复杂，底层JVM汇编指令
+  * cglib 文档缺失
+* btrace & arthas
 
 # MiddleWare
 
+* tomcat ClassLoader
 * redis
-    * zset
+  * zset
 
 # @@TODO
 
-* tomcat ClassLoader
-* btrace、arthas
-* 字节码工具：ASM，javassist，cglib
-* JTI  https://docs.oracle.com/javase/8/docs/platform/jvmti/jvmti.html
-* java.lang.management https://docs.oracle.com/javase/8/docs/technotes/guides/management/index.html
-  
     
 
