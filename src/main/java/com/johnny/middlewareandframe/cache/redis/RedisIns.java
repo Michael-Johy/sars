@@ -1,4 +1,4 @@
-package com.johnny.middleware.cache.redis;
+package com.johnny.middlewareandframe.cache.redis;
 
 
 /**

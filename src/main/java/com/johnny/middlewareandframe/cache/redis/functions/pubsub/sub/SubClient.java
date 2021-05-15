@@ -1,4 +1,4 @@
-package com.johnny.middleware.cache.redis.functions.pubsub.sub;
+package com.johnny.middlewareandframe.cache.redis.functions.pubsub.sub;
 
 import redis.clients.jedis.JedisPubSub;
 

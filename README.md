@@ -13,7 +13,6 @@
 * JMX
 
 # Library & Tools
-
 * netty
 * bytecode(javassist)
   * asm 较复杂，底层JVM汇编指令
@@ -25,8 +24,17 @@
 * tomcat ClassLoader
 * redis
   * zset
+* db
+  * Mysql shardingSphere
 
 # @@TODO
+
+JMX如何暴漏 kafka监控和管理 & rocketmq 设计模式 算法 spring boot & spring cloud & dubbo
+
+# architecture
+
+集群和分布式 分布式系统设计 微服务
+  
 
     
 
