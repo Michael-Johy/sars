@@ -1,4 +1,4 @@
-package com.johnny.middlewareandframe.mq.rocketmq.example;
+package com.johnny.middleware.mq.rocketmq.example;
 
 public class Constants {
 

@@ -1,7 +1,7 @@
-package com.johnny.middlewareandframe.cache.redis.functions.pubsub;
+package com.johnny.middleware.cache.redis.functions.pubsub;
 
-import com.johnny.middlewareandframe.cache.redis.RedisIns;
-import com.johnny.middlewareandframe.cache.redis.functions.pubsub.sub.SubClient;
+import com.johnny.middleware.cache.redis.RedisIns;
+import com.johnny.middleware.cache.redis.functions.pubsub.sub.SubClient;
 
 public class Sub {
     public static void main(String[] args) throws Exception {

@@ -1,6 +1,6 @@
-package com.johnny.middlewareandframe.cache.redis.datatype;
+package com.johnny.middleware.cache.redis.datatype;
 
-import com.johnny.middlewareandframe.cache.redis.RedisIns;
+import com.johnny.middleware.cache.redis.RedisIns;
 import redis.clients.jedis.Jedis;
 import redis.clients.jedis.Tuple;
 import redis.clients.jedis.ZParams;

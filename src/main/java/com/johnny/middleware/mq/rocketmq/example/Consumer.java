@@ -1,4 +1,4 @@
-package com.johnny.middlewareandframe.mq.rocketmq.example;
+package com.johnny.middleware.mq.rocketmq.example;
 
 import org.apache.rocketmq.client.consumer.DefaultMQPushConsumer;
 import org.apache.rocketmq.client.consumer.listener.ConsumeConcurrentlyContext;

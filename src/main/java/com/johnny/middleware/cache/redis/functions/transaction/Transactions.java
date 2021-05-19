@@ -1,6 +1,6 @@
-package com.johnny.middlewareandframe.cache.redis.functions.transaction;
+package com.johnny.middleware.cache.redis.functions.transaction;
 
-import com.johnny.middlewareandframe.cache.redis.RedisIns;
+import com.johnny.middleware.cache.redis.RedisIns;
 import redis.clients.jedis.Transaction;
 
 import java.util.List;

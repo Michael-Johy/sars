@@ -20,19 +20,22 @@
 * btrace & arthas
 
 # MiddleWare
-
 * tomcat ClassLoader
 * redis
   * zset
 * db
   * Mysql shardingSphere
+* mq
+  * kafka
+  * rocketmq
 
 # @@TODO
 
-JMX如何暴漏 kafka监控和管理 & rocketmq 设计模式 算法 spring boot & spring cloud & dubbo
+设计模式 doing
+
+influxdb 算法 spring boot & spring cloud & dubbo
 
 # architecture
-
 集群和分布式 分布式系统设计 微服务
   
 

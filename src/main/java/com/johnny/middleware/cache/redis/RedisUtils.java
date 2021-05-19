@@ -1,4 +1,4 @@
-package com.johnny.middlewareandframe.cache.redis;
+package com.johnny.middleware.cache.redis;
 
 import com.google.common.collect.Lists;
 import com.johnny.utils.lang.exception.Exceptions;

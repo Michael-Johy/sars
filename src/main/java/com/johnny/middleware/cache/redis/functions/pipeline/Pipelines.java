@@ -1,6 +1,6 @@
-package com.johnny.middlewareandframe.cache.redis.functions.pipeline;
+package com.johnny.middleware.cache.redis.functions.pipeline;
 
-import com.johnny.middlewareandframe.cache.redis.RedisIns;
+import com.johnny.middleware.cache.redis.RedisIns;
 import redis.clients.jedis.Pipeline;
 
 

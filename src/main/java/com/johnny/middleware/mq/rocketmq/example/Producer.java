@@ -1,4 +1,4 @@
-package com.johnny.middlewareandframe.mq.rocketmq.example;
+package com.johnny.middleware.mq.rocketmq.example;
 
 import org.apache.rocketmq.client.producer.DefaultMQProducer;
 import org.apache.rocketmq.client.producer.SendCallback;
@@ -20,7 +20,7 @@ public class Producer {
         producer.start();
         for (int i = 0; i < 10; i++) {
             Message message = new Message("sync-message", ("message-sync" + i).getBytes(RemotingHelper.DEFAULT_CHARSET));
-            SendResult result = producer.send(message);
+            SendResult result = producer.send(message, (mqs, msg, arg) -> null, 1);
             System.out.println(result.getMsgId() + " " + result.getSendStatus());
         }
         producer.shutdown();
