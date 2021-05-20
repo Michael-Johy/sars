@@ -29,9 +29,9 @@
   * kafka
   * rocketmq
 
-# @@TODO
+# 面向对象设计原则、思想、设计模式
 
-设计模式 doing
+# @@TODO
 
 influxdb 算法 spring boot & spring cloud & dubbo
 

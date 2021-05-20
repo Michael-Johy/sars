@@ -1,4 +1,4 @@
-package com.johnny.designpattern.singleinstance;
+package com.johnny.dp.creator;
 
 public class SingleInstance2 {
     private SingleInstance2() {
