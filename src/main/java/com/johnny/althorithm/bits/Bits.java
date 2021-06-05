@@ -7,6 +7,8 @@ public class Bits {
         int a = 5 & 4;
         System.out.println(a);
 
+
     }
+
 
 }
