@@ -1,5 +1,8 @@
 package com.johnny.althorithm.bits.algo.binarysearch;
 
+/**
+ * 二分搜索e
+ */
 public class BinarySearch {
 
     public static void main(String[] args) {

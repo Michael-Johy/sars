@@ -1,6 +1,6 @@
 package com.johnny.althorithm.bits.algo.bfs;
 
-import com.johnny.althorithm.bits.algo.tree.TreeNode;
+import com.johnny.althorithm.bits.algo.datastruct.tree.TreeNode;
 
 import java.util.LinkedList;
 import java.util.Queue;

@@ -1,17 +1,7 @@
-# 数据结构
-
 # 算法
+* 递归算法关键：明确函数的定义是什么;相信这个定义，根据这个定义推导最终的结果，不要陷入递归的细节
 
-# 动态规划
 
-* 解决问题(求最值)
-    * 凑零钱
-* 三要素
-    * 重叠子问题
-    * 最优子结构
-    * 状态转移方程
-    * 状态压缩
-* 模版 dp[0][0] ... =base for 选择1 in 选择1的所有值 for 选择2 in 选择2的所有值 .... dp[选择1][选择2]... = 求最值(选择1， 选择2)
 
 # 回溯算法
 
@@ -45,7 +35,7 @@
 
 # 二分搜索
 
-* 解决问题(有序数组中查找某个元素，或元素左边界，或元素右边界)
+* 解决问题(有序数组中查找某个元素，或元素左边界，或元素右边界, 搜索空间有序)
 * 模版 int bs(int[] nums, int target)
   int left=0; int right=nums.length-1; while(left<=right){ int mid=left+(right-left)/2; if (nums[mid] == target){ return
   mid; //查找元素 right=mid-1; //左边界, 向左收缩 left=mid+1; //右边界, 向右收缩 }else if(nums[mid] > target){ right = mid-1; //查找元素, 左边界,
@@ -67,12 +57,22 @@
   } Map<Character, Integer> window = new HashMap<>(); char[] sources = source.toCharArray(); int end = sources.length;
   int left =0;right=0; int resultStart = 0; int resultLength = Integer.MAX_VALUE; while(right < end){ //增大窗口 window.add(
   sources[right])
-  更新结果 right++; while(结果满足条件){ //收缩窗口 resultLength = right-left; resultStart = left; leftV = sources[left]; left++
+  //更新结果 right++; while(结果满足条件){ //收缩窗口 resultLength = right-left; resultStart = left; leftV = sources[left]; left++
   //更新结果， } } }
 
 # 区间问题
 
-线段起始位置升序，结束位置降序
+* 线段起始位置升序，结束位置降序
+
+# nsum问题
+
+* 2sum时可以采用hashMap帮助减少时间
+* nsum时
+
+# 二叉树
+
+* 写二叉树的算法，都是基于递归框架的。先搞清楚当前root节点该做什么，然后根据函数定义递归调用子节点
+* 模版 void traverse(TreeNode root){ //先序遍历 traverse(root.left); //中序遍历 traverse(root.right); //后序遍历 }
     
 
 

@@ -1,5 +1,7 @@
 package com.johnny.althorithm.bits.algo.dp;
 
+import java.util.Arrays;
+
 /**
  * 凑硬币问题：状态是总金额，选择时硬币的种类
  * 硬币个数选择最少的
@@ -42,23 +44,19 @@ public class CoinSolution {
             return 0;
         }
         int[] dp = new int[amount + 1];
+        Arrays.fill(dp, Integer.MAX_VALUE);
         dp[0] = 0;
         for (int i = 1; i <= amount; i++) {
-            dp[i] = Integer.MAX_VALUE;
             for (int coin : coins) {
                 if (i < coin) { //不选择该种硬币
                     continue;
                 }
-
                 int pre = dp[i - coin];
                 if (pre == Integer.MAX_VALUE) {
                     continue;
                 }
                 dp[i] = Math.min(dp[i], pre + 1);
             }
-        }
-        if (dp[amount] == Integer.MAX_VALUE) {
-            return -1;
         }
         return dp[amount];
     }
