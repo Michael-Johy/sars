@@ -1,23 +1,8 @@
 # 数据结构 data struct
 * 链表
 * 二叉树
-    * 序列化和反序列化:判断两颗树是否相等
-    * 还原树:需要先序遍历和中序遍历,至少2种
-    * 最近公共祖先
 * 完全二叉树
-    * 统计节点个数时结合二叉树和满二叉树的算法，时间复杂度是O(lgn * lgn)
 * 二叉搜索树(BST)
-    * 中序遍历是升序的
-    * 判断BST是否合法时，判断每个节点的最大值和最小值，增加参数的形式
-    * void BST(TreeNode root, int target) {
-      if (root.val == target)
-      // 找到目标，做点什么
-      if (root.val < target)
-      BST(root.right, target);
-      if (root.val > target)
-      BST(root.left, target);
-      }
-    * 二叉搜索树有多少种形态，用区间逼近的方式[1, n]
 * 平衡二叉树 @todo
     * 红黑树
 * 图
@@ -46,4 +31,13 @@
 * 二叉堆: 完全二叉树，存储在数组中, array[0]空置， 
   则parent=node/2, left=node*2, right=node*2 + 1
   * 实现优先级队列
+    
+
+* 字典树(前缀树)
+    class Trie{
+        boolean isEnd;
+        Trie[] children;
+    }  
+
+* 拓扑排序
 

@@ -58,7 +58,7 @@ public class CRUDSolution {
     }
 
 
-    public TreeNode remove(TreeNode root, int target) {
+    public TreeNode remove(TreeNode root, long target) {
         if (null == root) {
             return null;
         }

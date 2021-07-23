@@ -69,6 +69,17 @@
   * 半同步复制，主库的binlog同步到至少一个从库的relay log中
   * 同步辅助，
 
+# 日志系统
+  * redo & undo & binlog  
+    保证事务的持久性、用于复制
+  * error log
+    查询类似死锁，io瓶颈
+  * general log & slow query log
+    定位慢查询
+  * relay log
+    用于复制。slave上的io线程接收binlog并写入relay log，sql thread
+    应用中继日志文件到本地数据库
+
 
 
     
