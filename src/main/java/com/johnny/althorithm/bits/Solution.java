@@ -32,8 +32,6 @@ public class Solution {
 
         List<Integer> eleList = new ArrayList<>(eles);
 
-
-
         for (int i=0;i<eles.size();i++){
             result[i] = eleList.get(i);
         }

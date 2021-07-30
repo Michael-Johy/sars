@@ -1,5 +1,7 @@
 package com.johnny.java.threads;
 
+import java.util.ArrayList;
+import java.util.List;
 import java.util.concurrent.atomic.AtomicInteger;
 
 public class MyTest {
@@ -15,6 +17,10 @@ public class MyTest {
     public static void main(String[] args) throws Exception {
 
         String a = "";
+
+
+        List<int[]> list = new ArrayList<>();
+        list.add(new int[]{1, 3});
 
 
     }

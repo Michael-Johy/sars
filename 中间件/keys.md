@@ -15,7 +15,7 @@
 
 # 索引
 * 索引的定义: 帮助mysql高效获取数据的结构
-* 索引的类型: B+ tree、 Hash、 B tree
+* 索引的类型: B+ index、 Hash index、 full text index
 * B+树存储索引优点？B tree呢 or Hash or 红黑树
 * B+树叶子节点存储的数据？innodb(聚簇索引) & mylsam
 * 聚簇索引和非聚簇索引？

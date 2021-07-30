@@ -27,9 +27,6 @@
     * 走迷宫问题
 * 特点
     * 一般使用链表结构，不断加入当前节点的相邻节点, 满足条件时则退出
-* 模版 void bfs(head)
-  queue.add(head); steps = 0; while(queue is not empty){ int size = queue.size(); for i=0;i<size;i++{ item =
-  queue.poll(); if item 满足条件 return steps; queue.addAll(item.neighbors) //所有相邻节点 } steps++; }
 
 # 二分搜索
 
@@ -62,39 +59,12 @@
         return right;
 
 # 双指针
-
 * 类型以及解决问题
     * 快慢指针(链表 - 是否有环，环起始节点，链表中间，lastN节点)
     * 左右指针(数组 - 数组倒序，二分搜索， 2数之和)
     * 滑动窗口
         * 最小字串问题 即source包含所有target的元素, 满足条件了左侧需要收缩
         * 字符串排列问题 即source包含所有target元素，且不包含其它元素。 注意包含的元素多了要去除 出现重复了，左侧收缩去除重复元素
-
-* 滑动窗口模版 String minSubString(source, target){ 
-    char[] targets = target.toCharArray(); 
-    Map<Character, Integer> need = new HashMap<>(); 
-    for(char item : targets){ 
-      need.put(item, need.getOrDefault(item, 0) + 1)
-    } 
-    Map<Character, Integer> window = new HashMap<>(); 
-    char[] sources = source.toCharArray(); 
-    int end = sources.length;
-    int left =0;right=0; 
-    int resultStart = 0; 
-    int resultLength = Integer.MAX_VALUE; 
-    while(left < end){ 
-      //增大窗口 
-      window.add(sources[right])//更新结果 
-      right++; 
-      while(结果满足条件){ 
-      //收缩窗口 
-        resultLength = right-left; 
-        resultStart = left; 
-        leftV = sources[left]; 
-        left++  //更新结果， 
-      } 
-    } 
-  }
 
 # 区间问题
 
