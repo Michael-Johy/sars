@@ -37,4 +37,9 @@
         * synchronized
             * 内存语义：线程和主内存的关系来说
             * 实现原理：前插入monitorenter、后插入monitorexit
-        
+      
+
+# 内存溢出
+## 堆    OutOfMemory:java heap space
+## 栈    StackOverFlow: thread stack overflow
+## 永久代 OutOfMemory: meta space

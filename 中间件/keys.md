@@ -79,6 +79,37 @@
   * relay log
     用于复制。slave上的io线程接收binlog并写入relay log，sql thread
     应用中继日志文件到本地数据库
+    
+# mysql分页查询优化
+    mysql大数据量使用limit分页，随着页码的增大，查询效率越低下
+## 默认 
+    select * from table1 limit M, N     
+    全表扫描，适合数据量少
+## 建立主键或唯一索引，利用索引 + 排序  
+    select * from table1 where id_pk > pageNum * 10 order by id_pk asc limit N
+    索引扫描，速度很快，适合数据量很大
+## 基于索引使用prepare语句
+    prepare stat_name from "select 语句"
+    索引扫描，速度很快，适合数据量很大
+## 子查询/连接 + 索引  利用表的覆盖索引先定位到主键索引id快读定位数据的位置，再读取数据
+    select * from table1 where id >= (select id from table1 limit 10000, 1) limit N
+    或
+    select * from table1 as t1 join (select id from table1 limti 10000, 1) as t2 where 
+    t1.id = t2.id
+## 复合索引
+    如果对于有where 条件，又想走索引用limit的，必须设计一个索引，将where 放第一位，limit用到的主键放第2位，而且只能select 主键
+    
+# 连接类型与区域
+## 内连接
+    select * from a, b where a.A = b.A
+    结果仅包含符合连接条件的行
+## 左外连接 or 右外连接 or 全外连接(full join)
+    select * from a left join b where a.A = b.A
+    结果包含符合连接条件的行 + 左边不符合条件的行
+
+# union & union all 区别
+    UNION会进行数据的排序和去重，查询效率低
+    UNION ALL没有进行去重和排序，查询效率高
 
 
 
