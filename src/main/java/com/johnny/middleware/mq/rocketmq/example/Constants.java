@@ -2,5 +2,5 @@ package com.johnny.middleware.mq.rocketmq.example;
 
 public class Constants {
 
-    public static final String NAMESRV = "sandbox-2:9876";
+    public static final String NAMESRV = "sandbox-1:9876;sandbox-2:9876";
 }
