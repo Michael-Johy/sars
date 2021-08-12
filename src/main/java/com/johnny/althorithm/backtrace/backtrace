@@ -1,0 +1,17 @@
+定义：DFS算法，本质上暴力求解算法
+解决思路：决策树的遍历
+
+全排列问题
+N皇后问题
+
+# 模板
+result = []
+def backtrack(路径, 选择列表):
+    if 满足结束条件:
+        result.add(路径)
+        return
+
+    for 选择 in 选择列表:
+        做选择
+        backtrack(路径, 选择列表)
+        撤销选择

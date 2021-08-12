@@ -32,7 +32,7 @@
             多个进程共享同一块数据，当某个进程需要对数据进行修改时，则需要将其拷贝到用户的进程地址空间
     
     Rocket mq： 使用了sendfile方式
-    kafka：mmap + write
+    kafka：sendfile + pagecache
     netty：FileChannel 基于sendfile    
            mappedByteBuf 基于mmap内存映射
             

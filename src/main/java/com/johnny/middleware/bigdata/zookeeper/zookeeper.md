@@ -1,6 +1,6 @@
 # 定义
 ## distributed coordination service,  offer sets of primitives to build high 
-    level service like synchronizatio、config managemen、 group、 naming
+    level service like synchronizatio、config management、 group、 naming
    协调服务不容易实现，总是由于条件竞争或死锁导致错误，使用zookeeper可以使分布式程序从实现协调服务中
    解放出来
    
@@ -24,11 +24,12 @@
 # updates & watch
 
 # Guarantees
-### sequential consistent
-### atomicity
-### single system image
-### Reliability
-### timelines
+## sequential consistent
+## atomicity
+## single system image
+## Reliability
+## timelines
 
 # simple api
+
 # implementation
