@@ -8,7 +8,7 @@ import java.util.List;
 
 public class ZookeeperWatch {
 
-    private static final String connectionString = "10.69.65.130:2181,10.69.64.90:2181,10.69.65.125:2181";
+    private static final String connectionString = "sandbox1:2181,sandbox2:2181,sandbox3:2181";
 
     public static void main(String[] args) throws Exception {
         ZooKeeper zooKeeper = new ZooKeeper(connectionString, 300000, new WatcherImpl());
